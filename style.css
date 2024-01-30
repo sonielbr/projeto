@@ -35,6 +35,7 @@ body {
   /*background: color image repeat position/size */
 
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -156,6 +157,15 @@ ul li a:hover {
 
   transition: background 0.5s;
   border-radius: 50%;
+}
+
+@media (min-width: 708px) {
+  :root {
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }
 
 #social-links a:hover {
